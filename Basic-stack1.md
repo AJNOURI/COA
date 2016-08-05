@@ -1,11 +1,11 @@
-**Basic template1: **
+**Basic template1:**
 - image
 - flavor
 - keypair  
 
 
 
-==basic-hot1.yml ==
+basic-hot1.yml
 
 	heat_template_version: 2015-04-30
 	
