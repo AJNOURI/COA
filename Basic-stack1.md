@@ -4,8 +4,7 @@
 - keypair  
 
 
-
-basic-hot1.yml
+![basic-hot1.yml](https://github.com/AJNOURI/Openstack-heat-templates/blob/master/basic-stack1.yml)
 
 	heat_template_version: 2015-04-30
 	
