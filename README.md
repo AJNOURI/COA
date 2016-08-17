@@ -4,4 +4,8 @@ The following is a collection of exercices to get familiar with Openstack admini
 2. [Compute](https://github.com/AJNOURI/Openstack-Foundation-Openstack-Certified-Administrator-Preparation/wiki/1.-Identity-management)
 3. [Glance](https://github.com/AJNOURI/Openstack-Foundation-Openstack-Certified-Administrator-Preparation/wiki/3.-Glance)
 
-
+4. 
+5. 
+6. 
+7. 
+8. [Orchestration (heat)](https://github.com/AJNOURI/Openstack-Foundation-Openstack-Certified-Administrator-Preparation/wiki/8.-Orchestration)
