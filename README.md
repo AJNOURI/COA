@@ -10,6 +10,7 @@ The following is a collection of exercices to get familiar with Openstack admini
 7. 
 8. [Orchestration (heat)](https://github.com/AJNOURI/Openstack-Foundation-Openstack-Certified-Administrator-Preparation/wiki/8.-Orchestration)
 
+----------------
 
 #### Practice references
 * http://docs.openstack.org/  
