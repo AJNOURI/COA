@@ -1,3 +1,22 @@
+I am trying to create a volume, put some data, snapshot it, delete original data, and recover them from the snapshot, but I cannot recover the original data:
+
+1- Create a volume  
+2- Create an instance  
+3- Attach the volume to the instance  
+4- Console to the instnce  
+5- Format, mount the partition and create a file in the mounting directory   /mnt/vdb  
+6- Detach the volume  
+7- Create a snapshot of the volume  
+8- Create a volume from the snapshot  
+9- Delete the original volume and its snapshot  
+10- Attach the volume created from the snapshot to the instance  
+11- Console to the instance  
+==> no trace of the created file  
+
+
+
+
+
 **1- Create a volume**
 
     cinder create --name vol1 1
