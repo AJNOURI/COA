@@ -1,4 +1,4 @@
-I am trying to create a volume, put some data, snapshot it, delete original data, and recover them from the snapshot, but I cannot recover the original data:
+I am trying to create a volume, put some data, snapshot it, create a new volume from the snapshot, delete original volume and its snapshot, and recover the data from the new volume, but I cannot recover the original data:
 
 1- Create a volume  
 2- Create an instance  
