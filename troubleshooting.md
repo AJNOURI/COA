@@ -144,5 +144,29 @@ I am trying to create a volume, put some data, snapshot it, create a new volume 
 
 ==> no trace of the created file
 
+Thanks to Stephen hint, should have mounted the new device:
+
+    $ sudo fdisk -l
+    
+    Disk /dev/vda: 1073 MB, 1073741824 bytes
+    16 heads, 63 sectors/track, 2080 cylinders, total 2097152 sectors
+    Units = sectors of 1 * 512 = 512 bytes
+    Sector size (logical/physical): 512 bytes / 512 bytes
+    I/O size (minimum/optimal): 512 bytes / 512 bytes
+    Disk identifier: 0x00000000
+    
+    Disk /dev/vda doesn't contain a valid partition table
+    
+    Disk /dev/vdc: 1073 MB, 1073741824 bytes
+    16 heads, 63 sectors/track, 2080 cylinders, total 2097152 sectors
+    Units = sectors of 1 * 512 = 512 bytes
+    Sector size (logical/physical): 512 bytes / 512 bytes
+    I/O size (minimum/optimal): 512 bytes / 512 bytes
+    Disk identifier: 0x00000000
+    
+    Disk /dev/vdc doesn't contain a valid partition table
+    $ sudo mount /dev/vdc /mnt/vdb
+    $ ls /mnt/vdb
+    lost+found    testfile.txt
 
 
