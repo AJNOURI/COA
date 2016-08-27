@@ -2,6 +2,8 @@ The following is a collection of exercices to get familiar with Openstack admini
 
 1. [Identity management](https://github.com/AJNOURI/COA/wiki/01.-Identity-management)
 2. [Compute](https://github.com/AJNOURI/COA/wiki/02.-Compute)
+  * Instances
+  * Quotas
 3. [Glance](https://github.com/AJNOURI/COA/wiki/03.-Glance)
 4. [Cinder](https://github.com/AJNOURI/COA/wiki/04.-Cinder)
   * Volume snapshots  
