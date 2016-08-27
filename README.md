@@ -6,6 +6,7 @@ The following is a collection of exercices to get familiar with Openstack admini
   * Quotas
 3. [Glance](https://github.com/AJNOURI/COA/wiki/03.-Glance)
 4. [Cinder](https://github.com/AJNOURI/COA/wiki/04.-Cinder)
+  * Instances snapshots    
   * Volume snapshots  
   * Volume backups
   * Volume encryption
