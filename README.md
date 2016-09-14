@@ -14,11 +14,6 @@ The following is a collection of exercices to get familiar with Openstack admini
 
 ----------------
 
-#### Main resource
-* https://linuxacademy.com    
-![](http://hpnouri.free.fr/misc/Selection_245.png)
-
-
 #### Documentation
 * http://docs.openstack.org/  
 
