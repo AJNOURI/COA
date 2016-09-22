@@ -1,6 +1,6 @@
 The following is a collection of exercices to get familiar with Openstack administration through the cli for the purpose of preparing for COA (Openstack Foundation Openstack Certified Administrator) exam:
 
-# Administration section:
+### CLI administration section:
 
 1. [Identity management](https://github.com/AJNOURI/COA/wiki/01.-Identity-management)
 2. [Compute](https://github.com/AJNOURI/COA/wiki/02.-Compute)
@@ -15,7 +15,7 @@ The following is a collection of exercices to get familiar with Openstack admini
 5. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/08.-Orchestration)
 
 
-# Troubleshooting section:
+### Troubleshooting section:
 
 I am collecting all issues I've encountered during the learning process in the [issue section](https://github.com/AJNOURI/COA/issues).
 Opened sections are still underunvestigation, closed are solved.
