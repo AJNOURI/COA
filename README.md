@@ -17,8 +17,11 @@ The following is a collection of exercices to get familiar with Openstack admini
 
 ### Troubleshooting section:
 
-I am collecting all issues I've encountered during the learning process in the [issue section](https://github.com/AJNOURI/COA/issues).
-Opened sections are still underunvestigation, closed are solved.
+I am collecting all issues I've encountered during the learning process in the [issue section](https://github.com/AJNOURI/COA/issues).  
+Opened sections are still underunvestigation, closed are solved.  
+
+If you are lucky enough, you'll make a lot of mistakes to learn from and be prepared for the exam :)
+
 
 ----------------
 
