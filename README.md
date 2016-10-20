@@ -27,8 +27,9 @@ If you are lucky enough, you'll make a lot of mistakes to learn from and be prep
 ----------------
 
 #### Documentation
-* http://docs.openstack.org/  
-* [Troubleshooting swift](http://docs.openstack.org/admin-guide/objectstorage-troubleshoot.html): 
+* [Openstack official Documentation](http://docs.openstack.org/)  
+* [Troubleshooting swift](http://docs.openstack.org/admin-guide/objectstorage-troubleshoot.html)   
+  
 #### Exam references
 * https://www.openstack.org/coa/  
 * https://youtu.be/JGzDgnSex00  
