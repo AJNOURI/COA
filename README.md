@@ -15,6 +15,12 @@ The following is a collection of exercices to get familiar with Openstack admini
 5. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/05.-Orchestration)
 
 
+### Practice:
+
+Browse the page to https://ajnouri.github.com/coa, you'll find the list of tasks you can try to perform.
+By clicking on each tasksm, the solution will be revealed.
+To not fall into the illusion of competency, try your best to solve the question, by using the documentation docs.openstack.org, the only reference available in the exam, before looking the answer. This will help consolidating a mental process to get to the solution.  
+
 ### Troubleshooting section:
 
 I am collecting all issues I've encountered during the learning process and beyond in the [issue section](https://github.com/AJNOURI/COA/issues).  
