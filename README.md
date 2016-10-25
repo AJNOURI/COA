@@ -20,7 +20,8 @@ The following is a collection of exercices to get familiar with Openstack admini
 Browse the page to https://ajnouri.github.com/coa, with all tasks you can try to perform or download the single page [index.html](https://github.com/AJNOURI/ajnouri.github.io/blob/master/coa/index.html) and run a local webserver in the same directory using for example `python -m SimpleHTTPServer 12345`
 
 By clicking on each tasks, the solution will be revealed.  
-Make sure to fall into the **illusion of competency**, try your best to solve the question, by using the documentation [docs.openstack.org](docs.openstack.org), the only reference available in the exam, before looking the answer. This will help consolidating a mental process to get to the solution.  
+Make sure to avoid the **illusion of competency** by trying your best to solve the question and consulting the documentation [docs.openstack.org](docs.openstack.org), the only reference available in the exam, before looking the answer. 
+This will help consolidating a mental process to get to the solution.  
 
 ### Troubleshooting section:
 
