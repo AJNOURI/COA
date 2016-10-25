@@ -25,11 +25,12 @@ This will help consolidating a mental process to get to the solution.
 
 ### Troubleshooting section:
 
-I am collecting all issues I've encountered during the learning process and beyond in the [issue section](https://github.com/AJNOURI/COA/issues).  
+I am collecting all issues I've encountered during the learning process 
+In the [issue section](https://github.com/AJNOURI/COA/issues), look for issues labeled **Troubleshooting**.
   
-Opened sections are still under investigation, closed are solved.
+Opened issues are still under investigation, closed are solved.
 
-If you are lucky enough, you'll make a lot of mistakes to learn from and be prepared for the exam :)
+If you are lucky enough, you'll make a lot of mistakes to learn from and to be prepared for the exam :)
 
 ## VERY IMPORTANT!
 Your contribution is very welcome and encouraged for both the content and the form.
