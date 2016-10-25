@@ -31,7 +31,8 @@ Opened sections are still under investigation, closed are solved.
 If you are lucky enough, you'll make a lot of mistakes to learn from and be prepared for the exam :)
 
 ## VERY IMPORTANT!
-Your contribution is very welcome and encouraged for both to the content and the form.
+Your contribution is very welcome and encouraged for both the content and the form.
+
 ----------------
 
 #### Documentation
