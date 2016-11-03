@@ -64,12 +64,12 @@ Beforehand, you need to know this inf. :
 - tenant id + name
 - username + password
 
-	\#\!/bin/bash
-	export OS_AUTH_URL=http://146.20.103.97:35357/v2.0
-	export OS_TENANT_ID=0de5a13d471c44e3857a3fc4f3e7e4a2
-	export OS_TENANT_NAME="admin"
-	export OS_USERNAME="admin"
-	export OS_PASSWORD="openstack"
+	\#\!/bin/bash  
+	export OS_AUTH_URL=http://146.20.103.97:35357/v2.0  
+	export OS_TENANT_ID=0de5a13d471c44e3857a3fc4f3e7e4a2  
+	export OS_TENANT_NAME="admin"  
+	export OS_USERNAME="admin"  
+	export OS_PASSWORD="openstack"  
 
 5- source the file  
 
