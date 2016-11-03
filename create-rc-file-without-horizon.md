@@ -7,6 +7,9 @@ Beforehand, you need to know this inf. :
 * user name         : --os-username ==> admin 
 * type of password  : --os-auth-type ==> password
 
+If you are not sure about the argument grammar, issue   
+	openstack --
+
 1- Get the project name & id:  
 
 	openstack --os-auth-url http://X.X.103.97:5000/v3/ --os-project-domain-id default --os-user-domain-id default --os-project-name admin --os-username admin --os-auth-type password project list 
