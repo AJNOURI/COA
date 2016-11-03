@@ -9,7 +9,7 @@ Beforehand, you need to know this inf. :
 
 1- Get the project name & id:  
 
-	openstack --os-auth-url http://146.20.103.97:5000/v3/ --os-project-domain-id default --os-user-domain-id default --os-project-name admin --os-username admin --os-auth-type password project list 
+	openstack --os-auth-url http://X.X.103.97:5000/v3/ --os-project-domain-id default --os-user-domain-id default --os-project-name admin --os-username admin --os-auth-type password project list 
 	+----------------------------------+--------------------+
 	| ID                               | Name               |
 	+----------------------------------+--------------------+
@@ -24,7 +24,7 @@ Beforehand, you need to know this inf. :
 	
 2- Get the neutron endpoint id:  
 
-	openstack --os-auth-url http://146.20.103.97:5000/v3/ --os-project-domain-id default --os-user-domain-id default --os-project-name admin --os-username admin --os-auth-type password endpoint list
+	openstack --os-auth-url http://X.X.103.97:5000/v3/ --os-project-domain-id default --os-user-domain-id default --os-project-name admin --os-username admin --os-auth-type password endpoint list
 	+----------------------------------+-----------+--------------+----------------+
 	| ID                               | Region    | Service Name | Service Type   |
 	+----------------------------------+-----------+--------------+----------------+
@@ -44,15 +44,15 @@ Beforehand, you need to know this inf. :
 
 3- Using endpoint id, get the auth. url
 
-	openstack --os-auth-url http://146.20.103.97:5000/v3/ --os-project-domain-id default --os-user-domain-id default --os-project-name admin --os-username admin --os-auth-type password endpoint show 136c945e5fb4452b8e2b166d4e58e4ca
+	openstack --os-auth-url http://X.X.103.97:5000/v3/ --os-project-domain-id default --os-user-domain-id default --os-project-name admin --os-username admin --os-auth-type password endpoint show 136c945e5fb4452b8e2b166d4e58e4ca
 	+--------------+----------------------------------+
 	| Field        | Value                            |
 	+--------------+----------------------------------+
-	| adminurl     | http://146.20.103.97:35357/v2.0  |
+	| adminurl     | http://X.X.103.97:35357/v2.0  |
 	| enabled      | True                             |
 	| id           | 136c945e5fb4452b8e2b166d4e58e4ca |
-	| internalurl  | http://146.20.103.97:5000/v2.0   |
-	| publicurl    | http://146.20.103.97:5000/v2.0   |
+	| internalurl  | http://X.X.103.97:5000/v2.0   |
+	| publicurl    | http://X.X.103.97:5000/v2.0   |
 	| region       | RegionOne                        |
 	| service_id   | be39f289337e44c1945cd5fd87f28dac |
 	| service_name | keystone                         |
@@ -65,7 +65,7 @@ Beforehand, you need to know this inf. :
 - username + password
 
 	\#\!/bin/bash  
-	export OS_AUTH_URL=http://146.20.103.97:35357/v2.0  
+	export OS_AUTH_URL=http://X.X.103.97:35357/v2.0  
 	export OS_TENANT_ID=0de5a13d471c44e3857a3fc4f3e7e4a2  
 	export OS_TENANT_NAME="admin"  
 	export OS_USERNAME="admin"  
