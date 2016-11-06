@@ -15,9 +15,11 @@ The following is a collection of exercices to get familiar with Openstack admini
 5. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/05.-Orchestration)
 
 
-### Practice:
+### Exam practice & labbing:
 
-Browse the page to https://ajnouri.github.com/coa, with all tasks you can try to perform or download the single page [index.html](https://github.com/AJNOURI/ajnouri.github.io/blob/master/coa/index.html) and run a local webserver in the same directory using for example `python -m SimpleHTTPServer 12345`
+Browse the page https://ajnouri.github.com/coa, you'll find a series of tasks you can try to perform on your own lab.
+You can download the page [index.html](https://github.com/AJNOURI/ajnouri.github.io/blob/master/coa/index.html) and run a local webserver in the same directory    
+ex: `python -m SimpleHTTPServer 12345`
 
 By clicking on each tasks, the solution will be revealed.  
 Make sure to avoid the **illusion of competency** by trying your best to solve the question and consulting the documentation [docs.openstack.org](docs.openstack.org), the only reference available in the exam, before looking the answer. 
