@@ -17,7 +17,7 @@ The following is a collection of exercices to get familiar with Openstack admini
 
 ### Exam practice & labbing:
 
-Browse the page https://ajnouri.github.com/coa, you'll find a series of tasks you can try to perform on your own lab.
+Browse the page http://hpnouri.free.fr/coa, you'll find a series of tasks you can try to perform on your own lab.
 You can download the page [index.html](https://github.com/AJNOURI/ajnouri.github.io/blob/master/coa/index.html) and run a local webserver in the same directory    
 ex: `python -m SimpleHTTPServer 12345`
 
