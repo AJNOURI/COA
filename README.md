@@ -12,7 +12,8 @@ The following is a collection of exercices to get familiar with Openstack admini
   * Volume snapshots  
   * Volume backups
   * Volume encryption
-5. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/05.-Orchestration)
+5. [Swift](https://github.com/AJNOURI/COA/wiki/05.-Swift)
+6. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/06.-Orchestration)
 
 
 ### Exam practice & labbing:
