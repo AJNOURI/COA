@@ -2,8 +2,8 @@ The following is a collection of exercices to get familiar with Openstack admini
 
 ### CLI administration section:
 
-1. [Identity management](https://github.com/AJNOURI/COA/wiki/01.-Identity-management)
-2. [Compute](https://github.com/AJNOURI/COA/wiki/02.-Compute)
+1. [Identity management](https://github.com/AJNOURI/COA/wiki/01.-Identity:-Keystone)
+2. [Compute](https://github.com/AJNOURI/COA/wiki/02.-Compute:-Nova)
   * Instances
   * Quotas
 3. [Glance](https://github.com/AJNOURI/COA/wiki/03.-Image:-Glance)
@@ -13,7 +13,8 @@ The following is a collection of exercices to get familiar with Openstack admini
   * Volume backups
   * Volume encryption
 5. [Swift](https://github.com/AJNOURI/COA/wiki/05.-Object-Storage:-Swift)
-6. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/06.-Orchestration)
+6. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/06.-Orchestration:-Heat)
+7. Telemetry (ceilometer)
 
 
 ### Exam practice & labbing:
