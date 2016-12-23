@@ -6,13 +6,13 @@ The following is a collection of exercices to get familiar with Openstack admini
 2. [Compute](https://github.com/AJNOURI/COA/wiki/02.-Compute)
   * Instances
   * Quotas
-3. [Glance](https://github.com/AJNOURI/COA/wiki/03.-Glance)
-4. [Cinder](https://github.com/AJNOURI/COA/wiki/04.-Cinder)
+3. [Glance](https://github.com/AJNOURI/COA/wiki/03.-Image:-Glance)
+4. [Cinder](https://github.com/AJNOURI/COA/wiki/04.-Block-Storage:-Cinder)
   * Instances snapshots    
   * Volume snapshots  
   * Volume backups
   * Volume encryption
-5. [Swift](https://github.com/AJNOURI/COA/wiki/05.-Swift)
+5. [Swift](https://github.com/AJNOURI/COA/wiki/05.-Object-Storage:-Swift)
 6. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/06.-Orchestration)
 
 
