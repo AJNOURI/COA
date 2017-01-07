@@ -1,0 +1,32 @@
+heat_template_version: '2016-10-14'
+description:
+  resources:
+
+    internal_net:
+      type: OS::Neutron::Net
+
+    internal_router:
+      properties:
+        external_gateway_info: {network: public}
+      type: OS::Neutron::Router
+
+    internal_subnet:
+      properties:
+        cidr: 12.8.1.0/24
+        dns_nameservers: [8.8.8.8, 8.8.4.4]
+        ip_version: 4
+        network_id: {get_resource: internal_net}
+      type: OS::Neutron::Subnet
+
+    internal_interface:
+      type: OS::Neutron::RouterInterface
+      properties:
+        router_id: {get_resource: internal_router}
+        subnet: {get_resource: internal_subnet}
+
+    inst1:
+      type: OS::Nova::Server
+      properties:
+        flavor: m1.tiny
+        image: cirros
+        interface: {get_param: internal_interface}
