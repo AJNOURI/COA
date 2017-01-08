@@ -1,0 +1,25 @@
+heat_template_version: 2013-05-23
+
+description: Test Template
+
+parameters:
+  ImageID:
+    type: string
+    default: cirros
+  NetID:
+    type: string
+    default: private
+
+resources:
+  myserver1:
+    type: OS::Nova::Server
+    properties:
+      name: "Test server"
+      image: { get_param: ImageID }
+      flavor: "m1.tiny"
+      networks:
+        - network: { get_param: NetID }
+outputs:
+  myserver1_priv_ip:
+    description: First private IP of your server
+    value: { get_attr: [ myserver1, first_address ] }
