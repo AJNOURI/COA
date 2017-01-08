@@ -15,7 +15,7 @@ The following is a collection of exercices to get familiar with Openstack admini
 5. [Swift](https://github.com/AJNOURI/COA/wiki/05.-Object-Storage:-Swift)
 6. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/06.-Orchestration:-Heat)
 7. Telemetry (ceilometer)
-
+8. Database
 
 ### Exam practice & labbing:
 
