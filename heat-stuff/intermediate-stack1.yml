@@ -1,32 +1,38 @@
 heat_template_version: '2016-10-14'
 description:
-  resources:
 
-    internal_net:
-      type: OS::Neutron::Net
+resources:
 
-    internal_router:
-      properties:
-        external_gateway_info: {network: public}
-      type: OS::Neutron::Router
+  internal_net:
+    type: OS::Neutron::Net
 
-    internal_subnet:
-      properties:
-        cidr: 12.8.1.0/24
-        dns_nameservers: [8.8.8.8, 8.8.4.4]
-        ip_version: 4
-        network_id: {get_resource: internal_net}
-      type: OS::Neutron::Subnet
+  internal_router:
+    properties:
+      external_gateway_info: {network: public}
+    type: OS::Neutron::Router
 
-    internal_interface:
-      type: OS::Neutron::RouterInterface
-      properties:
-        router_id: {get_resource: internal_router}
-        subnet: {get_resource: internal_subnet}
+  internal_subnet:
+    properties:
+      cidr: 12.8.1.0/24
+      dns_nameservers: [8.8.8.8, 8.8.4.4]
+      ip_version: 4
+      network_id: {get_resource: internal_net}
+    type: OS::Neutron::Subnet
 
-    inst1:
-      type: OS::Nova::Server
-      properties:
-        flavor: m1.tiny
-        image: cirros
-        interface: {get_param: internal_interface}
+  internal_interface:
+    type: OS::Neutron::RouterInterface
+    properties:
+      router_id: {get_resource: internal_router}
+      subnet: {get_resource: internal_subnet}
+
+  inst1:
+    type: OS::Nova::Server
+    properties:
+      flavor: m1.tiny
+      image: cirros
+      networks:
+        - network : { get_resource : internal_net }
+
+outputs:
+   instance_outputs:
+     value: { get_attr: inst1, first_address, console_urls, novnc }
