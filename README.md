@@ -25,18 +25,18 @@ ex: `python -m SimpleHTTPServer 12345`
 
 By clicking on each tasks, the solution will be revealed.  
 Make sure to avoid the **illusion of competency** by trying your best to solve the question and consulting the documentation [docs.openstack.org](docs.openstack.org), the only reference available in the exam, before looking the answer. 
-This will help consolidating a mental process to get to the solution.  
+This will help consolidating a mental process to get to the solution.    
 
 ### Troubleshooting section:
 
 I am collecting all issues I've encountered during the learning process, mainly, [installing multinode openstack from scratch](http://docs.openstack.org/newton/install-guide-ubuntu/)
 
 In the [issue section](https://github.com/AJNOURI/COA/issues), look for issues labeled **Troubleshooting**.
-Opened issues are still under investigation, closed are solved.
-
-Even though different root causes could have the same symptoms and some solutions are curcumstantial, they still gives a hint on how processes and configuration files are interconnected.
-
-If you are lucky enough, you'll make a lot of mistakes to learn from and to be prepared for the exam :)
+Opened issues are still under investigation, closed are solved.  
+  
+Even though different root causes could have the same symptoms and some solutions are curcumstantial, they still gives a hint on how processes and configuration files are interconnected.  
+  
+If you are lucky enough, you'll make a lot of mistakes to learn from and to be prepared for the exam :)  
 
 ## VERY IMPORTANT!
 Your contribution is very welcome and encouraged for both the content and the form.
