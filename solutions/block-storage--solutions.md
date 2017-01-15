@@ -106,20 +106,13 @@ Make sure, you have a key and the appropriate ICMP and SSH rules in place:
     touch /mnt/vdb/testfile.txt  
     sync && sleep 2  
 
-### 5. On the blockstorage node /dev/stack-volumes/volume-*  
-
-![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
-
-    strings /dev/stack-volumes/volume-* | grep "testfile.txt"  
-
-  
-### 6. detach the colume "vol1" from the instance "instance1"  
+### 5. detach the colume "vol1" from the instance "instance1"  
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
 
 `nova volume-detach <instance-id> <vol-id> /dev/vdb`  
   
-### 7. Take a snapshot of "vol1", name it "snapshot-of-vol1"   
+### 6. Take a snapshot of "vol1", name it "snapshot-of-vol1"   
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
 
@@ -128,38 +121,38 @@ Make sure, you have a key and the appropriate ICMP and SSH rules in place:
     cinder snapshot-list   
 
   
-### 8. create a volume from the snapshot  
+### 7. create a volume from the snapshot  
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
 
     cinder create --snapshot-id <snapshot-id> --name <new-vol>  
     cinder list 
 
-### 9. reattach the first volume "vol1" to the instance "instance1"  
+### 8. reattach the first volume "vol1" to the instance "instance1"  
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
 
     nova volume-attach <instance-id>  <vol-id>  
 
-### 10. delete the previously created file "testfile.txt"  
+### 9. delete the previously created file "testfile.txt"  
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
   
-### 11. detach the colume "vol1" from the instance "instance1"  
+### 10. detach the colume "vol1" from the instance "instance1"  
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
 
     nova volume-detach <instance-id> <vol-id> /dev/vdb  
 
 
-### 12. attach the created volume "new-vol" to the instance "instance1"  
+### 11. attach the created volume "new-vol" to the instance "instance1"  
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
 
     nova volume-attach <instance-id>  <vol-id>  
 
   
-### 13. inside the attached volume verify the presence of the file "testfile.txt"   
+### 12. inside the attached volume verify the presence of the file "testfile.txt"   
 
 
 -----------
