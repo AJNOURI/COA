@@ -256,6 +256,25 @@ nova boot --image cirros-0.3.4-x86_64-uec --flavor m1.tiny --key_name key1 insta
   
 ### 1. Create the encrypted volume "encrypted-vol" (LUKS volume) of 1GB size  
 
+If encrypted type LUKS is not recognized:
+
+    openstack volume create --type LUKS --size 1 encrvol1
+    Volume type with name LUKS could not be found. (HTTP 404)
+
+Create it first:
+
+    openstack volume type create LUKS
+    cinder encryption-type-create --cipher aes-xts-plain64 --key_size 512 \
+    --control_location front-end LUKS nova.volume.encryptors.luks.LuksEncryptor
+    
+No need for epiphany to find out how, check the [documentation (available on the exam)](http://docs.openstack.org/newton/config-reference/block-storage/volume-encryption.html):
+    
+Then create a simple volume with LUKS type:
+
+    openstack volume create --size 1 --type LUKS encr-vol1
+
+
+
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
 
     cinder create --display-name 'encrypted volume' --volume-type LUKS 1  
