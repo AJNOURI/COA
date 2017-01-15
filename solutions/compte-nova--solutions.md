@@ -1,0 +1,112 @@
+## Instances
+
+### 1. (Keypair) From demo account, generate a public keypair named **mypubkey1** for use with openstack instances   
+
+    nova keypair-add key1 > key1.pem  
+    chmod 600 key1.pem  
+    nova keypair-list
+
+  
+
+### 2. (Flavor) From admin account, create a new flavor named m1.extra_tiny with 
+ * RAM: 64mb    
+ * Root disk size: 0  
+ * cpu: 1  
+
+-
+
+    . admin_rc.sh  
+    nova flavor-list  
+    nova flavor-create m1.extra_tiny auto 64 0 1 --rxtx-factor 1.0
+
+  
+
+### 3. Allow the tenant (project) "demo" to access the flavor
+
+    openstack project list  
+    nova flavor-access-add m1.extra_tiny <demo>  
+
+**additional help**  
+_delete_
+get flavor id to delete  
+
+    nova flavor-list  
+
+delete flavor  
+
+    nova flavor-delete <flavor-id>
+
+  
+
+### 4. Add new rules to the default security group "default" to allow access instances from internet through SSH, http and ICMP.
+
+    nova secgroup-list    
+    nova secgroup-list-rules default    
+    nova secgroup-add-rule default tcp 22 22 0.0.0.0/0    
+    nova secgroup-add-rule default tcp 80 80 0.0.0.0/0    
+    nova secgroup-add-rule default icmp -1 -1 0.0.0.0/0    
+
+or using openstack unified client:
+
+    openstack security group list  
+    openstack security group rule create e8b3525e-dcae-47f0-b090-a1b62aa95a9c --protocol icmp  --ingress  
+    openstack security group rule create e8b3525e-dcae-47f0-b090-a1b62aa95a9c --protocol tcp --dst-port 80:80 --ingress  
+    openstack security group rule create e8b3525e-dcae-47f0-b090-a1b62aa95a9c --protocol tcp --dst-port 22:22 --ingress  
+
+
+### 5. Provision the following instance
+* image: cirros-0.3.4-x86_64-uec
+* flavor: m1.tiny
+* keypair: key1
+* security group: default
+
+-
+
+    nova boot instance2   
+    --image cirros-0.3.4-x86_64-uec --flavor m1.tiny --key-name key1 --security-group default  
+
+### 6. Log to the machine console using the keypair key1
+Get the instance IP address from `nova list` command      
+
+    ssh -i key1.pem ubuntu@<ip>
+
+### 7. Create a snapshot named "instance2-snapshot"  from the running image instance2
+
+    nova image-create <instance2> <instance2-snapshot>  
+    nova delete <instance2>  
+
+
+-----------
+
+
+
+## Quotas
+
+### 1. Make sure tenant demo have the following limits
+
+ - 15 backups   
+ - 15 000 gigabytes   
+ - 15 networks   
+ - 15 subnets  
+
+and the user demo from tenant demo have the following limits
+
+ - 15 cpu cores 15  
+ - floating ips  
+
+-
+
+    openstack project list
+
+    cinder quotas-usage <project-id>
+    cinder quotas-update --backups 15 --gigabytes 15 000 <project-id>
+
+    neutron quota-show
+    neutron quota-update --tenant <teanant-id> --network 15 --subnet --15
+
+    nova quota-show --tenant <tenant-id>
+    nova quota-update --tenant <tenant-id> --cpu <15> --floating_ips <15>
+
+    nova limits --tenant <tenant-id>
+
+
