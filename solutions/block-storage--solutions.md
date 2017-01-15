@@ -196,7 +196,18 @@ nova boot --image cirros-0.3.4-x86_64-uec --flavor m1.tiny --key_name key1 insta
 
     nova volume-attach 253619cf-127c-46a1-a2aa-a273cedf6a85 2429b44b- cc42-4ebd-847c-fde00ea96649 /dev/vdb  
 
-### 4. Inside the home directory of the mounted partition inside "instance3" create a file testfile.txt   
+### 4. On "instance3", create, format and mount the new attached volume into a a directory, create a file testfile.txt and safely (after syn) umount the partition
+
+![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
+
+    sudo fdisk /dev/vdb
+    sudo mkfs.ext4 /dev/vdb1
+    sudo mount /dev/vdb1 /mnt/vdb1
+    touch /mnt/vdb1/testfile.txt
+    sync && sleep 2
+    sudo umount /dev/vdb1 /mnt/vdb1
+    
+
 ### 5. Detach the volume from the running instance  
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
@@ -239,7 +250,8 @@ nova boot --image cirros-0.3.4-x86_64-uec --flavor m1.tiny --key_name key1 insta
 
 ### 11. Inside the mounted partition, make sure the file "testfile.txt" exists  
 
-
+    sudo mount /dev/vdb1 /mnt/vdb1 
+    ls /mnt/vdb1
 
 -----------
 -----------
