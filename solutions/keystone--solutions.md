@@ -44,11 +44,11 @@ endpoint Interfaces
 - internal http://controller:60666
 
 
-openstack service create --name ipam --description "ipam service" ipam
-openstack endpoint create --region RegionOne test public http://controller:60666
-openstack endpoint create --region RegionOne test internal http://controller:60666
-openstack endpoint create --region RegionOne test admin http://controller:60666
-openstack endpoint list | grep test
+    openstack service create --name ipam --description "ipam service" ipam  
+    openstack endpoint create --region RegionOne test public http://controller:60666  
+    openstack endpoint create --region RegionOne test internal http://controller:60666  
+    openstack endpoint create --region RegionOne test admin http://controller:60666  
+    openstack endpoint list | grep test
 
 
 
