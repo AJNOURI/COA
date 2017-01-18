@@ -43,6 +43,7 @@ endpoint Interfaces
 - admin http://controller:60666
 - internal http://controller:60666
 
+--
 
     openstack service create --name ipam --description "ipam service" ipam  
     openstack endpoint create --region RegionOne test public http://controller:60666  
