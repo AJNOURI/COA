@@ -38,6 +38,15 @@ Even though different root causes could have the same symptoms and some solution
   
 If you are lucky enough, you'll make a lot of mistakes to learn from and to be prepared for the exam :)  
 
+
+### Exam inf.:
+
+- [General inf. about the exam: cost, score, duration...](https://www.openstack.org/coa)  
+- [The OpenStack Foundation Certification Candidate Handbook](https://www.openstack.org/assets/coa/COA-Candidate-Handbook-V1.5.62.pdf)  
+- [The exam environment: start the exam, interface, what you are allowed to do or not to do.](https://www.openstack.org/assets/coa/os-tipsdocument-0423.pdf)  
+- [The Operators' View on the Certified OpenStack Administrator Exam](https://www.youtube.com/watch?v=2NvMgdI1m1I)  
+
+
 ## VERY IMPORTANT!
 Your contribution is very welcome and encouraged for both the content and the form.
 
