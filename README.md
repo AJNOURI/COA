@@ -39,13 +39,15 @@ Even though different root causes could have the same symptoms and some solution
 If you are lucky enough, you'll make a lot of mistakes to learn from and to be prepared for the exam :)  
 
 
-### Exam inf.:
+#### Exam references
 
 - [General inf. about the exam: cost, score, duration...](https://www.openstack.org/coa)  
 - [The OpenStack Foundation Certification Candidate Handbook](https://www.openstack.org/assets/coa/COA-Candidate-Handbook-V1.5.62.pdf)  
 - [The exam environment: start the exam, interface, what you are allowed to do or not to do.](https://www.openstack.org/assets/coa/os-tipsdocument-0423.pdf)  
 - [The Operators' View on the Certified OpenStack Administrator Exam](https://www.youtube.com/watch?v=2NvMgdI1m1I)  
-
+- [The Test Takers Guide to the Certified OpenStack Administrator](https://youtu.be/EXckOKPtSZQ)
+- [Prepping for the OpenStack Administrator Exam](https://youtu.be/JGzDgnSex00)
+- [Passing the Certified OpenStack Administrator Test](https://youtu.be/p2_Z8WCqkTU)
 
 ## VERY IMPORTANT!
 Your contribution is very welcome and encouraged for both the content and the form.
@@ -55,9 +57,7 @@ Your contribution is very welcome and encouraged for both the content and the fo
 #### Documentation
 * [Openstack official Documentation](http://docs.openstack.org/)  
 * [Troubleshooting swift](http://docs.openstack.org/admin-guide/objectstorage-troubleshoot.html)   
-  
-#### Exam references
-* https://www.openstack.org/coa/  
-* https://youtu.be/JGzDgnSex00  
-* https://youtu.be/EXckOKPtSZQ  
-* https://youtu.be/p2_Z8WCqkTU  
+
+
+
+
