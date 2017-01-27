@@ -94,10 +94,10 @@ Using nova client:
 
 
 
-### 8. Log to the machine console using the keypair key1
+### 8. Log to the machine console using the keypair mykey1
 Get the instance IP address from `nova list` command      
 
-    ssh -i key1.pem ubuntu@<ip>
+    ssh -i mykey1.pem ubuntu@<ip>
 
 
 
