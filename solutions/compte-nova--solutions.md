@@ -55,22 +55,53 @@ or using openstack unified client:
 
 
 ### 5. Provision the following instance
-* image: cirros-0.3.4-x86_64-uec
-* flavor: m1.tiny
-* keypair: key1
-* security group: default
+ * image: cirros-0.3.4-x86_64-uec
+ * flavor: m1.tiny
+ * keypair: key1
+ * security group: default
 
 -
 
     nova boot instance2   
     --image cirros-0.3.4-x86_64-uec --flavor m1.tiny --key-name key1 --security-group default  
 
-### 6. Log to the machine console using the keypair key1
+### 6. Create a pair key with ssh-keygen (we want to have a keypair created outside of openstack). Now, add the created key  with openstack with name "mykey1"
+
+    ssh-keygen -q -f <ssh-key>
+
+This will generate a keypair:
+ *  ssh-key: private key
+ *  ssh-key.pub: public key
+ 
+Using nova client:
+    
+    nova keypair-add --pub-key ssh-key.pub mykey1
+
+Using openstack client:
+
+    openstack keypair create --pub-key ssh-key.pub mykey1
+
+
+### 7. This time, create a pair key directly with openstack and name it "mykey2"
+
+Using openstack client:
+    
+    openstack keypair create mykey2 > mykey2.pem
+
+Using nova client:
+    
+    nova keypair-add mykey2 > mykey2.pem
+
+
+
+### 8. Log to the machine console using the keypair key1
 Get the instance IP address from `nova list` command      
 
     ssh -i key1.pem ubuntu@<ip>
 
-### 7. Create a snapshot named "instance2-snapshot"  from the running image instance2
+
+
+### 9. Create a snapshot named "instance2-snapshot"  from the running image instance2
 
     nova image-create <instance2> <instance2-snapshot>  
     nova delete <instance2>  
