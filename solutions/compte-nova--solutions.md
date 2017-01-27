@@ -101,11 +101,6 @@ Get the instance IP address from `nova list` command
 
 
 
-### 9. Create a snapshot named "instance2-snapshot"  from the running image instance2
-
-    nova image-create <instance2> <instance2-snapshot>  
-    nova delete <instance2>  
-
 
 -----------
 
