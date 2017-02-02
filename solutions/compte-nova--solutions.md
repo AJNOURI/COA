@@ -115,7 +115,7 @@ Get the instance IP address from `nova list` command
  - 15 networks   
  - 15 subnets  
 
-### 1. Make sure user demo from tenant demo have the following limits
+### 2. Make sure user demo from tenant demo have the following limits
 
  - 15 cpu cores 15  
  - floating ips  
