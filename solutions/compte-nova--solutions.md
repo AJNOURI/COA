@@ -115,7 +115,7 @@ Get the instance IP address from `nova list` command
  - 15 networks   
  - 15 subnets  
 
-and the user demo from tenant demo have the following limits
+### 1. Make sure user demo from tenant demo have the following limits
 
  - 15 cpu cores 15  
  - floating ips  
@@ -136,3 +136,13 @@ and the user demo from tenant demo have the following limits
     nova limits --tenant <tenant-id>
 
 
+### 3. Using p1_user1/openstack, check that project1 cannot create more instances
+### 4. Make sure that users in project1 can create 2 more instances
+
+    openstack quota set --instances 1 project1
+  
+### 5. Check that the new quotas is also applied for user=p1_user2,pass=openstack 
+### 6. We want user=p2_user1,pass=openstack is able to create only 2 floating ips, but 5 floating ips for p2_user2/openstack
+
+    nova quota-update --user p1_user1 --floating-ips 2 project2
+    nova quota-update --user p1_user2 --floating-ips 5 project2
