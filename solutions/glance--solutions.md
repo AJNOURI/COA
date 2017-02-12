@@ -9,7 +9,7 @@
 -Start an instance named "u1" from the following parameters:
 * image: "ubuntu-trusty"
 * flavor: m1.small
-* key: key1
+* key: key31
 * security group: default
 
 `nova boot u2 --image ubuntu-trusty --flavor m1.small --key-name key1 --security-group default`
@@ -25,7 +25,7 @@
 -Start an instance named "u2" from the following parameters:
 * image: "debian87"
 * flavor: m1.small
-* key: key1
+* key: key32
 * security group: default
 
 `nova boot u2 --image debian87 --flavor m1.small --key-name key1 --security-group default`
