@@ -6,8 +6,8 @@ The following is a collection of exercices to get familiar with Openstack admini
 2. [Compute](https://github.com/AJNOURI/COA/wiki/02.-Compute:-Nova)
   * Instances
   * Quotas
-3. [Neutron](https://github.com/AJNOURI/COA/wiki/03.-Networking:-Neutron) 
-4. [Glance](https://github.com/AJNOURI/COA/wiki/04.-Image:-Glance)
+3. [Glance](https://github.com/AJNOURI/COA/wiki/03.-Image:-Glance)
+4. [Neutron](https://github.com/AJNOURI/COA/wiki/04.-Networking:-Neutron) 
 5. [Cinder](https://github.com/AJNOURI/COA/wiki/05.-Block-Storage:-Cinder)
   * Instances snapshots    
   * Volume snapshots  
