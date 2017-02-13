@@ -6,16 +6,17 @@ The following is a collection of exercices to get familiar with Openstack admini
 2. [Compute](https://github.com/AJNOURI/COA/wiki/02.-Compute:-Nova)
   * Instances
   * Quotas
-3. [Glance](https://github.com/AJNOURI/COA/wiki/03.-Image:-Glance)
-4. [Cinder](https://github.com/AJNOURI/COA/wiki/04.-Block-Storage:-Cinder)
+3. [Neutron](https://github.com/AJNOURI/COA/wiki/03.-Networking:-Neutron) 
+4. [Glance](https://github.com/AJNOURI/COA/wiki/04.-Image:-Glance)
+5. [Cinder](https://github.com/AJNOURI/COA/wiki/05.-Block-Storage:-Cinder)
   * Instances snapshots    
   * Volume snapshots  
   * Volume backups
   * Volume encryption
-5. [Swift](https://github.com/AJNOURI/COA/wiki/05.-Object-Storage:-Swift)
-6. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/06.-Orchestration:-Heat)
-7. Telemetry (ceilometer)
-8. [Database](https://github.com/AJNOURI/COA/wiki/08.-Database)
+6. [Swift](https://github.com/AJNOURI/COA/wiki/06.-Object-Storage:-Swift)
+7. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/07.-Orchestration:-Heat)
+8. Telemetry (ceilometer)
+9. [Database](https://github.com/AJNOURI/COA/wiki/09.-Database)
 
 ### Exam practice & labbing:
 
