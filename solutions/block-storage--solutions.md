@@ -116,9 +116,13 @@ Make sure, you have a key and the appropriate ICMP and SSH rules in place:
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
 
-    cinder snapshot-create --name <snapshot-name> <vol-id>  
-    cinder list  
-    cinder snapshot-list   
+    cinder snapshot-create --name <snapshot-name> <vol-id>    
+or  
+  
+    openstack snapshot create --name snapshot-of-vol1 <vol1-id>  
+      
+    cinder list    
+    cinder snapshot-list     
 
   
 ### 7. create a volume from the snapshot  
@@ -126,6 +130,9 @@ Make sure, you have a key and the appropriate ICMP and SSH rules in place:
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
 
     cinder create --snapshot-id <snapshot-id> --name <new-vol>  
+or
+    
+    openstack volume create --snapshot <snapshot-id> --size <1> <new-vol>
     cinder list 
 
 ### 8. reattach the first volume "vol1" to the instance "instance1"  
