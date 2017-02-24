@@ -275,7 +275,9 @@ Create it first:
     --control_location front-end LUKS nova.volume.encryptors.luks.LuksEncryptor
     
 No need for epiphany to find out how, check the [documentation (available on the exam)](http://docs.openstack.org/newton/config-reference/block-storage/volume-encryption.html):
-    
+
+configuration guides > Block storage service > Volume encryption ...
+
 Then create a simple volume with LUKS type:
 
     openstack volume create --size 1 --type LUKS encr-vol1
