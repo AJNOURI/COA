@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Set appropriate hostname & IP address
-echo "192.168.0.108 rdo-newton rdo-newton.localdomain" >> /etc/hosts
-hostnamectl set-hostname rdo-newton
-
 # Prepare the host
 systemctl disable firewalld
 systemctl stop firewalld
