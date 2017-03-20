@@ -52,6 +52,33 @@ endpoint Interfaces
     openstack endpoint list | grep test
 
 
+### 5.You are told to create a keypair named "ku1p1" for a user "u1p1" (passwrd="u1p1") from on project "p1" without accessing the Dashboard.
+Knowing you already have an RC file for another user you have access to.
+
+**file openrc_demo:**  
+> unset OS_SERVICE_TOKEN  
+> export OS_USERNAME=demo  
+> export OS_PASSWORD=openstack  
+> export PS1='[\u@\h \W(keystone_demo)]\$ '  
+> export OS_AUTH_URL=http://192.168.236.10:5000/v2.0  
+  
+> export OS_TENANT_NAME=demo  
+> export OS_IDENTITY_API_VERSION=2.0  
+
+--
+Copy the rc file into a new one for the user "u1p1" and replace the username, password,project, prompt variables and source it to have access to user "u1p1" CLI.
+
+    **file openrc_u1p1  
+    unset OS_SERVICE_TOKEN  
+    export OS_USERNAME=u1p1
+    export OS_PASSWORD=u1p1
+    export PS1='[\u@\h \W(keystone_u1p1)]\$ '  
+    export OS_AUTH_URL=http://192.168.236.10:5000/v2.0  
+    
+    export OS_TENANT_NAME=p1  
+    export OS_IDENTITY_API_VERSION=2.0  
+
+
 
 ---
 
