@@ -4,15 +4,15 @@ The following is a collection of exercices to get familiar with Openstack admini
 
 1. [Identity management](https://github.com/AJNOURI/COA/wiki/01.-Identity:-Keystone)
 2. [Compute](https://github.com/AJNOURI/COA/wiki/02.-Compute:-Nova)
-  * Instances
-  * Quotas
+    * Instances
+    * Quotas
 3. [Glance](https://github.com/AJNOURI/COA/wiki/03.-Image:-Glance)
 4. [Neutron](https://github.com/AJNOURI/COA/wiki/04.-Networking:-Neutron) 
 5. [Cinder](https://github.com/AJNOURI/COA/wiki/05.-Block-Storage:-Cinder)
-  * Instances snapshots    
-  * Volume snapshots  
-  * Volume backups
-  * Volume encryption
+    * Instances snapshots    
+    * Volume snapshots  
+    * Volume backups
+    * Volume encryption
 6. [Swift](https://github.com/AJNOURI/COA/wiki/06.-Object-Storage:-Swift)
 7. [Orchestration (heat)](https://github.com/AJNOURI/COA/wiki/07.-Orchestration:-Heat)
 8. Telemetry (ceilometer)
