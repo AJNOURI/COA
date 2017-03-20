@@ -42,14 +42,14 @@ endpoint Interfaces
 - public http://controller:60666
 - admin http://controller:60666
 - internal http://controller:60666
-
+- region: RegionOne
 --
 
     openstack service create --name ipam --description "ipam service" ipam  
-    openstack endpoint create --region RegionOne test public http://controller:60666  
-    openstack endpoint create --region RegionOne test internal http://controller:60666  
-    openstack endpoint create --region RegionOne test admin http://controller:60666  
-    openstack endpoint list | grep test
+    openstack endpoint create --region RegionOne public http://controller:60666 ipam   
+    openstack endpoint create --region RegionOne internal http://controller:60666 ipam  
+    openstack endpoint create --region RegionOne admin http://controller:60666 ipam  
+    openstack endpoint list | grep ipam
 
 
 ### 5.You are told to create a keypair named "ku1p1" for a user "u1p1" (passwrd="u1p1") from on project "p1" without accessing the Dashboard.
