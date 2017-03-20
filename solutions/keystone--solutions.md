@@ -38,12 +38,12 @@ Service
 - name: ipam
 - description: ipam service
 
-endpoint Interfaces
-- public http://controller:60666
-- admin http://controller:60666
-- internal http://controller:60666
-- region: RegionOne
---
+Endpoint Interfaces
+-public http://controller:60666  
+-admin http://controller:60666  
+-internal http://controller:60666  
+-region: RegionOne  
+
 
     openstack service create --name ipam --description "ipam service" ipam  
     openstack endpoint create --region RegionOne public http://controller:60666 ipam   
