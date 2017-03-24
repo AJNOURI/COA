@@ -101,8 +101,23 @@ Using nova client:
     nova keypair-add mykey2 > mykey2.pem
 
 
+### 8. Provision the following instance
+name:  instance7
+image: cirros-0.3.4-x86_64-uec
+flavor: m1.tiny
+keypair: mykey1
+security group: default
 
-### 8. Log to the machine console using the keypair mykey1
+
+    openstack server create --image cirros-0.3.4-x86_64-uec --flavor m1.tiny --security-group default --key-name mykey1 --nic net-id=41c0a2ee-e780-4efe-beba-05abbb658b52 instance7
+
+or
+
+    nova boot --flavor m1.tiny --image cirros-0.3.4-x86_64-uec --key-name mykey1 --security-groups default --nic net-id=41c0a2ee-e780-4efe-beba-05abbb658b52 instance7
+
+
+
+### 9. Log to the machine console using the keypair mykey1
 Get the instance IP address from `nova list` command      
 
     ssh -i mykey1.pem ubuntu@<ip>
