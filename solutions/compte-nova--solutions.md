@@ -127,9 +127,17 @@ Get the instance IP address from `nova list` command
 
 -----------
 
-
-
 ## Quotas
+
+If you are not sure about the unit to use (in GB/MB), check the values displayed in the command:
+
+    openstack quota show \<project\>
+
+or under the appropriate authorized user:
+
+    nova quota-show
+
+
 
 ### 1. Make sure tenant demo have the following limits
 
