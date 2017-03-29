@@ -39,6 +39,7 @@ delete flavor
   
 
 ### 4. Add new rules to the default security group "default" to allow access instances from internet through SSH, http and ICMP.
+using openstack unified client:
 
     openstack security group rule create --proto icmp --src-ip 0.0.0.0/0 default
     openstack security group rule create --proto tcp --src-ip 0.0.0.0/0 --dst-port 22 default
@@ -51,15 +52,6 @@ or
     nova secgroup-add-rule default tcp 22 22 0.0.0.0/0    
     nova secgroup-add-rule default tcp 80 80 0.0.0.0/0    
     nova secgroup-add-rule default icmp -1 -1 0.0.0.0/0    
-
-
-
-or using openstack unified client:
-
-    openstack security group list  
-    openstack security group rule create e8b3525e-dcae-47f0-b090-a1b62aa95a9c --protocol icmp  --ingress  
-    openstack security group rule create e8b3525e-dcae-47f0-b090-a1b62aa95a9c --protocol tcp --dst-port 80:80 --ingress  
-    openstack security group rule create e8b3525e-dcae-47f0-b090-a1b62aa95a9c --protocol tcp --dst-port 22:22 --ingress  
 
 
 ### 5. Provision the following instance
