@@ -1,0 +1,52 @@
+heat_template_version: 2013-05-23
+
+description: Test Template
+
+parameters:
+  Image:
+    type: string
+    default: cirros
+  Flavor:
+    type: string
+    default: m1.tiny
+  Keypair:
+    type: string
+    default: kp1
+  Pubnet:
+    type: string
+    default: public
+
+resources:
+  internal_net:
+    type: OS::Neutron::Net
+  internal_router:
+    properties:
+      external_gateway_info: 
+        network: { get_param: Pubnet }
+    type: OS::Neutron::Router
+  internal_subnet:
+    properties:
+      cidr: 12.8.1.0/24
+      dns_nameservers: [8.8.8.8, 8.8.4.4]
+      ip_version: 4
+      network_id: {get_resource: internal_net}
+    type: OS::Neutron::Subnet
+  internal_interface:
+    type: OS::Neutron::RouterInterface
+    properties:
+      router_id: {get_resource: internal_router}
+      subnet: {get_resource: internal_subnet}
+  myserver1:
+    type: OS::Nova::Server
+    properties:
+      name: "Test server"
+      image: { get_param: Image }
+      flavor: { get_param: Flavor }
+      key_name: { get_param: Keypair }
+      networks:
+        - network: { get_resource: internal_net }
+
+outputs:
+  myserver1_priv_ip:
+    description: First private IP of your server
+    value: { get_attr: [ myserver1, first_address ] }
