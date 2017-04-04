@@ -9,9 +9,6 @@ parameters:
   Flavor:
     type: string
     default: m1.tiny
-  Keypair:
-    type: string
-    default: kp1
   Pubnet:
     type: string
     default: public
@@ -36,13 +33,22 @@ resources:
     properties:
       router_id: {get_resource: internal_router}
       subnet: {get_resource: internal_subnet}
+
+  Keypair:
+    type: OS::Nova::KeyPair
+    properties:
+      name: kp1
+      public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDoUbvsFe3N9BTlcHX0dgknvpZCb9XcLjINgEdSKTy/0kK1wRo3M2LAdvuQUSoQBUmU0XKD5UqlmF7UNUXUUpeQag1EeyTM978fCjnF40lICLuUfSt7t8v/99VEpNBslMH6lrsX4vUMEZ7/N6h3F4qmRmqtrHrEuqS175UfaHRZoQfZvIlGTgl8NOVlPOOtMi1Y40Y6uP078uRYpvcWYUBPuFMMJxntetKrNRHG8om56/JcY5WMmeJhPJpwyBnd/mBHl1CtG+YHMEg/kwagzn6MACJ1z68mg7mh0vDsFLdDomPGp4TlhcxaocKp5/19NZXoYxgB5EFdZoituRBGJORJ root@centos7-rdo-liberty03042017-231802" 
+      save_private_key: True
+
+
   myserver1:
     type: OS::Nova::Server
     properties:
       name: "Test server"
       image: { get_param: Image }
       flavor: { get_param: Flavor }
-      key_name: { get_param: Keypair }
+      key_name: { get_resource: Keypair }
       networks:
         - network: { get_resource: internal_net }
 
