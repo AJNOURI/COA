@@ -9,8 +9,8 @@ systemctl enable network
 systemctl start network
 
 # Install repository
-yum install -y centos-release-openstack-newton
 yum install -y https://rdoproject.org/repos/rdo-release.rpm
+yum install -y centos-release-openstack-ocata
 yum update -y
 
 # Install openstack
