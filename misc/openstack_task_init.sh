@@ -1,14 +1,38 @@
 #!/bin/bash
 # load script from internet
-
+# $1 script argument for the controller IP
 # Create a keystone authentication tamplate file
+controller=$1
+usage(){
+  echo ""
+  echo "Usage: $0 {controller_IP}"
+  echo ""
+  exit 1
+}
+
+if [ "$#" -ne 1 ]; then
+  usage
+fi
+
+ipcheck(){
+  if [[ "$controller" =~ ^([0-9]{1,3})[.]([0-9]{1,3})[.]([0-9]{1,3})[.]([0-9]{1,3})$ ]]
+  then
+      for (( i=1; i<${#BASH_REMATCH[@]}; ++i ))
+      do
+        (( ${BASH_REMATCH[$i]} <= 255 )) || { echo "BAD IP entered" >&2; exit 1; }
+      done
+  else
+        echo "BAD IP entered" >&2
+        exit 1;
+  fi
+}
 
 cat <<EOFMOTD > ~/keystone_auth
 unset OS_SERVICE_TOKEN
 export OS_USERNAME=\$1
 export OS_PASSWORD=\$2
 export PS1='[\u@\h \W(\$1)]\$ '
-export OS_AUTH_URL=http://162.242.235.171:5000/v2.0
+export OS_AUTH_URL=http://$1:5000/v2.0
 export OS_TENANT_NAME=\$3
 export OS_IDENTITY_API_VERSION=2.0
 EOFMOTD
