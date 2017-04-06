@@ -126,6 +126,7 @@ nova secgroup-add-rule default icmp -1 -1 0.0.0.0/0
 
 
 log 'Starting router and connecting subnet'
+source keystone_auth p1_user1 openstack  project1
 neutron router-create routerp1
 neutron router-gateway-set routerp1 public
 neutron router-interface-add routerp1 p1_subnet1
