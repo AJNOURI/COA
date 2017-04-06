@@ -106,13 +106,16 @@ security group: default
 or
 
     nova boot --flavor m1.tiny --image cirros-0.3.4-x86_64-uec --key-name mykey1 --security-groups default --nic net-id=41c0a2ee-e780-4efe-beba-05abbb658b52 instance7
+    
+    
+### 9. Create a floating IP (from the public subnet)and assign it to the instance7
 
+    nova floating-ip-create
+    nova floating-ip-associate instance7 <ex:172.24.4.231>
+    
+### 10. Log to the machine console using the keypair mykey1 using the floating IP assigned to the instance7
 
-
-### 9. Log to the machine console using the keypair mykey1
-Get the instance IP address from `nova list` command      
-
-    ssh -i mykey1.pem ubuntu@<ip>
+    ssh -i mykey1.pem ubuntu@<ex:172.24.4.231>
 
 
 
