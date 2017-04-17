@@ -13,7 +13,7 @@
  * Root disk size: 0  
  * cpu: 1  
 
--
+--
 
     . admin_rc.sh  
     nova flavor-list  
@@ -60,7 +60,7 @@ or
  * keypair: key1
  * security group: default
 
--
+--
 
     nova boot instance2   
     --image cirros-0.3.4-x86_64-uec --flavor m1.tiny --key-name key1 --security-group default  
@@ -146,7 +146,7 @@ or under the appropriate authorized user:
  - 15 cpu cores 15  
  - floating ips  
 
--
+--
 
     openstack project list
 
@@ -181,7 +181,7 @@ or under the appropriate authorized user:
  - max 55555 RAM  
  - max 55 floating_ips  
 
--
+--
 
     nova quota-class-update --instances 5 --cores 5 --ram 55555 --floating_ips 55  default  
 
@@ -199,12 +199,13 @@ Check the quotas for "project3".
  - max 22222 RAM
  - max 22 floating_ips
 
--
+--
 
     nova quota-class-update --instances 2 --cores 2 --ram 22222 --floating_ips 22  default  
 
 ### 10. Create project "project4" and two users "user41" and "user42" within.  
 (you can choose any password you like)  
+
 Check the quotas for "user41" / "project3".  
 Check the quotas for "user42" / "project3".  
 
@@ -217,11 +218,12 @@ Check the quotas for "user42" / "project3".
  - max 1 cores  
  - max 11111 RAM  
  - max 11 floating_ips  
+ 
 Check the quotas for "user41" / "project4".  
 Check the quotas for "user42" / "project4".  
 Check the default quotas  
 
--
+--
 
     nova quota-update --instances 1 --ram 11111 --cores 1 --user \<user41_id\>  \<project4_id\>  
     nova quota-show --tenant \<project4\> --user \<user41_id\>  
