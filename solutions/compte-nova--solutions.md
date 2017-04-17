@@ -172,3 +172,59 @@ or under the appropriate authorized user:
 
     nova quota-update --user p1_user1 --floating-ips 2 project2
     nova quota-update --user p1_user2 --floating-ips 5 project2
+
+
+### 7. Change the default quotas for any new project to:  
+
+ - max 5 instances 
+ - max 5 cores  
+ - max 55555 RAM  
+ - max 55 floating_ips  
+
+-
+
+    nova quota-class-update --instances 5 --cores 5 --ram 55555 --floating_ips 55  default  
+
+### 8. Create project "project3" and user "user3" within.  
+Check the quotas for "project3".  
+  
+    openstack project create project3  
+    openstack user create user3 --password user3 --project project3  
+    nova quota-defaults  
+
+### 9. Again, change the default quotas for any new project to:
+
+ - max 2 instances
+ - max 2 cores
+ - max 22222 RAM
+ - max 22 floating_ips
+
+-
+
+    nova quota-class-update --instances 2 --cores 2 --ram 22222 --floating_ips 22  default  
+
+### 10. Create project "project4" and two users "user41" and "user42" within.  
+(you can choose any password you like)  
+Check the quotas for "user41" / "project3".  
+Check the quotas for "user42" / "project3".  
+
+    nova quota-class-update --instances 5 --cores 5 --ram 55555 --floating_ips 55  default  openstack user create user41 --password user41 --project project4  
+    nova quota-class-update --instances 5 --cores 5 --ram 55555 --floating_ips 55  default  openstack user create user42 --password user42 --project project4  
+
+
+### 11. Change the quotas for "user41" within "project4" to:  
+ - max 1 instances  
+ - max 1 cores  
+ - max 11111 RAM  
+ - max 11 floating_ips  
+Check the quotas for "user41" / "project4".  
+Check the quotas for "user42" / "project4".  
+Check the default quotas  
+
+-
+
+    nova quota-update --instances 1 --ram 11111 --cores 1 --user \<user41_id\>  \<project4_id\>  
+    nova quota-show --tenant \<project4\> --user \<user41_id\>  
+    nova quota-show --tenant \<project4\> --user \<user42_id\>  
+
+Notice the different quotas between a specific user within a project, the same project and the default quotas.  
