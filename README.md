@@ -19,7 +19,7 @@ The following is a collection of exercices to get familiar with Openstack admini
 9. [Database](https://github.com/AJNOURI/COA/wiki/09.-Database)
 
 ### Exam practice & labbing:
-
+#### Under construction:
 Browse the page http://hpnouri.free.fr/coa, you'll find a series of tasks you can try to perform on your own lab.
 You can download the page [index.html](https://github.com/AJNOURI/ajnouri.github.io/blob/master/coa/index.html) and run a local webserver in the same directory    
 ex: `python -m SimpleHTTPServer 12345`
@@ -27,6 +27,8 @@ ex: `python -m SimpleHTTPServer 12345`
 By clicking on each tasks, the solution will be revealed.  
 Make sure to avoid the **illusion of competency** by trying your best to solve the question and consulting the documentation [docs.openstack.org](docs.openstack.org), the only reference available in the exam, before looking the answer. 
 This will help consolidating a mental process to get to the solution.    
+
+#### Until the page http://hpnouri.free.fr/coa is built, you can simply use the above outline for more uptodate exercices and solutions.
 
 ### Troubleshooting section:
 
@@ -50,6 +52,9 @@ If you are lucky enough, you'll make a lot of mistakes to learn from and to be p
 - [The Test Takers Guide to the Certified OpenStack Administrator](https://youtu.be/EXckOKPtSZQ)
 - [Prepping for the OpenStack Administrator Exam](https://youtu.be/JGzDgnSex00)
 - [Passing the Certified OpenStack Administrator Test](https://youtu.be/p2_Z8WCqkTU)
+
+## DISCLAIMER!
+The list of tasks and the format presented are suggested before taking the exam, so any matching is a coincidence.
 
 ## VERY IMPORTANT!
 Your contribution is very welcome and encouraged for both the content and the form.
