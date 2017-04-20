@@ -1,7 +1,7 @@
-# rapid CLI oneliner log inspection for a given serevice
-# Lookig for keywords "fail", "error", "unable".
+# rapid CLI oneliner log inspection inside all log files
+# Lookig for keywords "fail", "error", "unable", "warning".
 
-for i in $(ls /var/log/horizon/*); do echo "========"; echo "======== log file : $i"; echo "========"; tail $i | egrep -i fail ; done
+for i in $(ls /var/log/*/*.log); do echo "=========="; echo $i; echo "========="; tail $i| egrep -i warning; done
 
 
 
