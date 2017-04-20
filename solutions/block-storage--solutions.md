@@ -35,7 +35,7 @@ Make sure, you have a key and the appropriate ICMP and SSH rules in place:
 ### 3. take a snapshot of instance "instance2", name it "snapshot-of-instance2"
 
 ![](https://github.com/AJNOURI/COA/blob/master/misc/Selection_697.png)  
-    nova image-create \<instance2\> snapshot-of-instance1
+    nova image-create \<instance2\> snapshot-of-instance2
 
 ### 4. terminate the instance "instance2"
 
