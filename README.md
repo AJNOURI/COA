@@ -68,7 +68,3 @@ Your contribution is very welcome and encouraged for both the content and the fo
 * ### My main reference for preparation is [LinuxAcademy](https://linuxacademy.com/openstack/courses) with their amazing OpenStack courses and On-Demand hands-on labs. 
 * [Openstack official Documentation](http://docs.openstack.org/)  
 * [Troubleshooting swift](http://docs.openstack.org/admin-guide/objectstorage-troubleshoot.html)   
-
-
-
-
