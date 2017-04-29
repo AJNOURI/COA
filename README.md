@@ -54,14 +54,17 @@ If you are lucky enough, you'll make a lot of mistakes to learn from and to be p
 - [Passing the Certified OpenStack Administrator Test](https://youtu.be/p2_Z8WCqkTU)
 
 ## DISCLAIMER!
-The list of tasks and the format presented are suggested before taking the exam, so any matching is a coincidence.
+The list of tasks and the format presented are suggested before taking the exam, so any matching is a pure coincidence.
 
 ## VERY IMPORTANT!
-Your contribution is very welcome and encouraged for both the content and the form.
+Your contribution is very welcome and encouraged for both the content and the form.  
 
+## And got it finally:
+![](https://github.com/AJNOURI/COA/blob/master/misc/COA.jpg?raw=true)
 ----------------
 
 #### Documentation
+* ### My main reference for preparation is [LinuxAcademy](https://linuxacademy.com/openstack/courses) with their amazing OpenStack courses and especially the On-Demand labs ![https://linuxacademy.com/openstack/courses](https://raw.githubusercontent.com/AJNOURI/COA/master/misc/Selection_987.png)
 * [Openstack official Documentation](http://docs.openstack.org/)  
 * [Troubleshooting swift](http://docs.openstack.org/admin-guide/objectstorage-troubleshoot.html)   
 
