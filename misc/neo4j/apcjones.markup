@@ -1,0 +1,210 @@
+<ul class="graph-diagram-markup" data-internal-scale="1.49" data-external-scale="1">
+  <li class="node" data-node-id="0" data-x="-2393.9616942751145" data-y="1096.0987357467054">
+    <span class="caption">nova</span><dl class="properties"><dt>type</dt><dd>service</dd><dt>configfile</dt><dd>"/etc/nova/nova.conf "</dd></dl></li>
+  <li class="node" data-node-id="1" data-x="-3472.8404052184223" data-y="-607.8316678930062">
+    <span class="caption">neutron</span><dl class="properties"><dt>type</dt><dd>service</dd></dl></li>
+  <li class="node" data-node-id="2" data-x="-1344.8423872058017" data-y="540.5948536508033">
+    <span class="caption">keystone</span><dl class="properties"><dt>type</dt><dd>service</dd><dt>configfile</dt><dd>"/etc/keystone/keystone.conf"</dd></dl></li>
+  <li class="node" data-node-id="3" data-x="-4255.327169074695" data-y="199.74923085558189">
+    <span class="caption">glance</span><dl class="properties"><dt>type</dt><dd>service</dd><dt>configfile</dt><dd>"/etc/glance/glance-api.conf"</dd></dl></li>
+  <li class="node" data-node-id="4" data-x="-1725.759008036418" data-y="1666.1199558251283">
+    <span class="caption">cinder</span><dl class="properties"><dt>type</dt><dd>service</dd></dl></li>
+  <li class="node" data-node-id="5" data-x="-3604.3495069674373" data-y="1596.4534484453343">
+    <span class="caption">ceilometer</span><dl class="properties"><dt>type</dt><dd>service</dd></dl></li>
+  <li class="node" data-node-id="6" data-x="-2819.4550874404176" data-y="647.6212581352465">
+    <span class="caption">swift</span><dl class="properties"><dt>type</dt><dd>service</dd></dl></li>
+  <li class="node" data-node-id="8" data-x="-2715.653030454345" data-y="97.75383157914055">
+    <span class="caption">mongodb</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="9" data-x="-2248.448389272911" data-y="12.068673790549408">
+    <span class="caption">rabbitmqctl</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="10" data-x="-3158.533429150807" data-y="-137.18024824662498">
+    <span class="caption">memcached</span><dl class="properties"><dt>type</dt><dd>process</dd><dt>configfile</dt><dd>"/etc/memcached.conf"</dd></dl></li>
+  <li class="node" data-node-id="11" data-x="-2321.561165872826" data-y="453.3366738645683">
+    <span class="caption">apache</span><dl class="properties"><dt>type</dt><dd>process</dd><dt>configfile</dt><dd>"/etc/apache2/apache2.conf"</dd></dl></li>
+  <li class="node" data-node-id="12" data-x="-3023.044480997844" data-y="1313.537581220534">
+    <span class="caption">nova-api</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="13" data-x="-2027.9268131403614" data-y="1437.0687686189358">
+    <span class="caption">nova-consoleauth</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="14" data-x="-1923.9655884255028" data-y="1096.0987357467054">
+    <span class="caption">nova-scheduler</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="15" data-x="-2520.423729914552" data-y="1513.0260717976464">
+    <span class="caption">nova-conductor</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="16" data-x="-2876.6080947273454" data-y="1437.0687686189358">
+    <span class="caption">nova-novncproxy</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="17" data-x="-4322.910957732278" data-y="-1148.6114544952936">
+    <span class="caption">neutron-server</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="18" data-x="-4905.618842918376" data-y="-1004.1423046945388">
+    <span class="caption">neutron-linuxbridge-agent</span><dl class="properties"><dt>type</dt><dd>service</dd></dl></li>
+  <li class="node" data-node-id="19" data-x="-3929.35130062227" data-y="-1085.695355232038">
+    <span class="caption">neutron-dhcp-agent</span>
+  </li>
+  <li class="node" data-node-id="20" data-x="-1063.6300081665977" data-y="1012.5577798467101">
+    <span class="caption">neutron-metadata-agent</span>
+  </li>
+  <li class="node" data-node-id="21" data-x="-5048.833926605069" data-y="-566.64611628347">
+    <span class="caption">neutron-l3-agent</span>
+  </li>
+  <li class="node" data-node-id="22" data-x="-2611.3083626043876" data-y="-643.2726325597948">
+    <span class="caption">controller node</span><dl class="properties"><dt>type</dt><dd>node</dd><dt>management ip</dt><dd>10.0.0.11</dd></dl></li>
+  <li class="node" data-node-id="23" data-x="-4288.012840400513" data-y="1012.5577798467101">
+    <span class="caption">glance-control</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="24" data-x="-5048.833926605069" data-y="326.0800892874699">
+    <span class="caption">glance-registry</span><dl class="properties"><dt>type</dt><dd>process</dd><dt>configfile</dt><dd>"/etc/glance/glance-registry.conf"</dd></dl></li>
+  <li class="node" data-node-id="25" data-x="-4789.144329289636" data-y="1012.5577798467101">
+    <span class="caption">glance-api</span><dl class="properties"><dt>type</dt><dd>process</dd><dt>configfile</dt><dd>"/etc/glance/glance-api.conf"</dd></dl></li>
+  <li class="node" data-node-id="26" data-x="-2463.6284656472976" data-y="1898.4056205364177">
+    <span class="caption">cinder-scheduler</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="27" data-x="-2134.2497276223235" data-y="2123.9011836609934">
+    <span class="caption">cinder-api</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="28" data-x="-1817.1675536199627" data-y="2225.9167887069043">
+    <span class="caption">tgt</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="29" data-x="-1369.0485136288985" data-y="2263.7553724170043">
+    <span class="caption">cinder-volume</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="30" data-x="-4669.43830642062" data-y="1744.1792666145539">
+    <span class="caption">ceilometer-agent-central</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="31" data-x="-4127.511976240044" data-y="2065.126633152817">
+    <span class="caption">ceilometer-agent-notification</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="32" data-x="-3604.3495069674373" data-y="2194.587518865411">
+    <span class="caption">ceilometer-api</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="33" data-x="-3298.4932904713723" data-y="1942.772890243662">
+    <span class="caption">ceilometer-collector</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="34" data-x="-3349.7725805417467" data-y="755.4828290072356">
+    <span class="caption">swift-proxy</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="35" data-x="-3111.5719475023675" data-y="1073.84772715166">
+    <span class="caption">swift-init</span><dl class="properties"><dt>type</dt><dd>process</dd></dl></li>
+  <li class="node" data-node-id="36" data-x="-1542.6478240970994" data-y="-437.8842758411749">
+    <span class="caption">ntp/chrony</span><dl class="properties"><dt>type</dt><dd>process</dd><dt>configfile</dt><dd>"/etc/chrony/chrony.conf"</dd></dl></li>
+  <li class="node" data-node-id="38" data-x="-2027.9268131403614" data-y="-722.3605593335428">
+    <span class="caption">compute1</span><dl class="properties"><dt>type</dt><dd>node</dd><dt>management ip</dt><dd>10.0.0.31</dd></dl></li>
+  <li class="node" data-node-id="39" data-x="-1369.0485136288985" data-y="-787.3085988892453">
+    <span class="caption">block node</span><dl class="properties"><dt>type</dt><dd>node</dd><dt>management ip</dt><dd>10.0.0.11</dd></dl></li>
+  <li class="node" data-node-id="40" data-x="-1011.2462768554683" data-y="-787.3085988892453">
+    <span class="caption">object1 node</span><dl class="properties"><dt>type</dt><dd>node</dd><dt>management ip</dt><dd>10.0.0.51</dd></dl></li>
+  <li class="node" data-node-id="41" data-x="-618.8794453938797" data-y="-607.8316678930062">
+    <span class="caption">object2 node</span><dl class="properties"><dt>type</dt><dd>node</dd><dt>management ip</dt><dd>10.0.0.52</dd></dl></li>
+  <li class="node" data-node-id="42" data-x="-1575.4134700963448" data-y="-56.14061255138579">
+    <span class="caption">mariadb/mysql</span><dl class="properties"><dt>type</dt><dd>process</dd><dt>configfile</dt><dd>"/etc/mysql/mariadb.conf.d/99-openstack.cnf"</dd></dl></li>
+  <li class="relationship" data-from="0" data-to="12">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="0" data-to="13">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="0" data-to="14">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="0" data-to="15">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="0" data-to="16">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="1" data-to="17">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="1" data-to="18">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="1" data-to="19">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="1" data-to="20">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="1" data-to="21">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="3" data-to="23">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="3" data-to="24">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="3" data-to="25">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="4" data-to="26">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="4" data-to="27">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="4" data-to="28">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="4" data-to="29">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="5" data-to="30">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="5" data-to="31">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="5" data-to="32">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="5" data-to="33">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="6" data-to="34">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="6" data-to="35">
+    <span class="type">MANAGED_BY</span>
+  </li>
+  <li class="relationship" data-from="22" data-to="36">
+    <span class="type">ALLOWED_BY</span>
+  </li>
+  <li class="relationship" data-from="38" data-to="36">
+    <span class="type">ALLOWED_BY</span>
+  </li>
+  <li class="relationship" data-from="39" data-to="36">
+    <span class="type">ALLOWED_BY</span>
+  </li>
+  <li class="relationship" data-from="40" data-to="36">
+    <span class="type">ALLOWED_BY</span>
+  </li>
+  <li class="relationship" data-from="41" data-to="36">
+    <span class="type">ALLOWED_BY</span>
+  </li>
+  <li class="relationship" data-from="42" data-to="22">
+    <span class="type">CONFIGURED_ON</span><dl class="properties"><dt>text</dt><dd>"bind-address = 10.0.0.11"</dd></dl></li>
+  <li class="relationship" data-from="36" data-to="22">
+    <span class="type">CONFIGURED_ON</span>
+  </li>
+  <li class="relationship" data-from="9" data-to="22">
+    <span class="type">CONFIGUREDON</span>
+  </li>
+  <li class="relationship" data-from="10" data-to="22">
+    <span class="type">CONFIGURED_ON</span><dl class="properties"><dt>text</dt><dd>"-l 10.0.0.11"</dd></dl></li>
+  <li class="relationship" data-from="2" data-to="42">
+    <span class="type">AUTHENTICATED</span><dl class="properties"><dt>type</dt><dd>database</dd><dt>controller</dt><dd>"10.0.0.11"</dd><dt>user</dt><dd>keystone</dd><dt>password</dt><dd>KEYSTONE_DBPASS</dd></dl></li>
+  <li class="relationship" data-from="2" data-to="22">
+    <span class="type">CONFIGURED_ON</span>
+  </li>
+  <li class="relationship" data-from="11" data-to="22">
+    <span class="type">CONFIGURED_ON</span>
+  </li>
+  <li class="relationship" data-from="11" data-to="22">
+    <span class="type">USES</span><dl class="properties"><dt>text</dt><dd>"ServerName controller"</dd></dl></li>
+  <li class="relationship" data-from="3" data-to="22">
+    <span class="type">CONFIGURED_ON</span>
+  </li>
+  <li class="relationship" data-from="25" data-to="42">
+    <span class="type">AUTHENTICATED</span><dl class="properties"><dt>type</dt><dd>database</dd><dt>controller</dt><dd>"10.0.0.11"</dd><dt>user</dt><dd>glance</dd><dt>password</dt><dd>GLANCE_DBPASS</dd></dl></li>
+  <li class="relationship" data-from="24" data-to="42">
+    <span class="type">AUTHENTICATED</span><dl class="properties"><dt>type</dt><dd>database</dd><dt>controller</dt><dd>"10.0.0.11"</dd><dt>user</dt><dd>glance</dd><dt>password</dt><dd>GLANCE_DBPASS</dd></dl></li>
+  <li class="relationship" data-from="0" data-to="42">
+    <span class="type">AUTHENTICATED</span><dl class="properties"><dt>type</dt><dd>database</dd><dt>controller</dt><dd>"10.0.0.11"</dd><dt>user</dt><dd>nova</dd><dt>password</dt><dd>NOVA_DBPASS</dd></dl></li>
+  <li class="relationship" data-from="0" data-to="2">
+    <span class="type">AUTHENTICATED</span><dl class="properties"><dt>type</dt><dd>keystone</dd><dt>server</dt><dd>"controller 35357"</dd><dt>user</dt><dd>nova</dd><dt>password</dt><dd>NOVA_DBPASS</dd></dl></li>
+  <li class="relationship" data-from="25" data-to="2">
+    <span class="type">AUTHENTICATED</span><dl class="properties"><dt>type</dt><dd>keystone</dd><dt>server</dt><dd>"controller 35357"</dd><dt>user</dt><dd>nova</dd><dt>password</dt><dd>NOVA_DBPASS</dd></dl></li>
+  <li class="relationship" data-from="0" data-to="10">
+    <span class="type">AUTHENTICATED</span><dl class="properties"><dt>server</dt><dd>"controller 11211"</dd></dl></li>
+  <li class="relationship" data-from="25" data-to="10">
+    <span class="type">AUTHENTICATED</span><dl class="properties"><dt>server</dt><dd>"controller 11211"</dd></dl></li>
+  <li class="relationship" data-from="20" data-to="2">
+    <span class="type">AUTHENTICATED</span><dl class="properties"><dt>type</dt><dd>keystone</dd><dt>server</dt><dd>"controller 35357"</dd><dt>user</dt><dd>neutron</dd><dt>password</dt><dd>NEUTRON_DBPASS</dd></dl></li>
+</ul>
