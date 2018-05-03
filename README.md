@@ -1,3 +1,5 @@
+# Are you ready for the COA exam?
+
 The following is a collection of exercices to get familiar with Openstack administration through the cli for the purpose of preparing for COA (Openstack Foundation Openstack Certified Administrator) exam:
 
 ### CLI administration section:
